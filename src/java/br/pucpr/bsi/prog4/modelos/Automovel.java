@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Automovel {
@@ -18,6 +19,18 @@ public class Automovel {
     private long id;
     private String placa;
     private int anoFabricacao;
+    
+    @ManyToOne
+    private Modelo modelo;
+
+    public Modelo getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(Modelo modelo) {
+        this.modelo = modelo;
+    }
+    
 
     public long getId() {
         return id;
