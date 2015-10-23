@@ -5,6 +5,7 @@
  */
 package br.pucpr.bsi.prog4.modelos;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,6 +18,7 @@ public class Automovel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Column(nullable = false, length = 7)
     private String placa;
     private int anoFabricacao;
     
