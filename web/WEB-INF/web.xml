@@ -4,14 +4,19 @@
         <servlet-name>AutomovelNovoServlet</servlet-name>
         <servlet-class>br.pucpr.bsi.prog4.controller.AutomovelNovoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ModeloServlet</servlet-name>
+        <servlet-class>br.pucpr.bsi.prog4.controller.ModeloServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AutomovelNovoServlet</servlet-name>
         <url-pattern>/automovel/novo</url-pattern>
         <url-pattern>/automovel/inserir</url-pattern>
-
     </servlet-mapping>
-    
-    
+    <servlet-mapping>
+        <servlet-name>ModeloServlet</servlet-name>
+        <url-pattern>/ModeloServlet</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
